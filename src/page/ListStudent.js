@@ -43,7 +43,7 @@ export default function ProductList() {
                             <td><button className={'btn btn-outline-primary'} onClick={()=> {
                                 navigate('edit/'+item.id)
                             }}>Edit</button></td>
-                            <td><button className={'btn btn-outline-danger'} onClick={() => {
+                            <td><button className='btn btn-outline-danger' onClick={() => {
                                 axios.delete('http://localhost:8000/products/' + item.id).then(() => {
                                     getAll()
                                 })
