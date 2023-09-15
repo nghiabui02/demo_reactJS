@@ -1,9 +1,8 @@
 import {Link, useNavigate} from "react-router-dom";
 import {useFormik} from "formik";
-import * as Yup from "yup";
 import {toast} from "react-toastify";
 import {useDispatch} from "react-redux";
-import {login, register} from "../../services/userService";
+import {register} from "../../services/userService";
 
 export default function Register() {
     const navigate = useNavigate()
